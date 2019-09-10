@@ -9,9 +9,9 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 endif()
 
 # disable 32 bit builds
-if(NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
-    message(FATAL_ERROR "64 bit generator is required.")
-endif()
+#if(NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
+#    message(FATAL_ERROR "64 bit generator is required.")
+#endif()
 
 # make the project find our own provided libraries
 # the libraries provided here should have higher priority than system libraries

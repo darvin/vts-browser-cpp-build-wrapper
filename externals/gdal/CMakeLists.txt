@@ -1,7 +1,7 @@
 
 message(STATUS "@@@ gdal")
 message(STATUS "MINIMAL gdal replacement library")
-
+add_definitions(-DPTHREAD_MUTEX_ADAPTIVE_NP=0)
 set(GDAL_SOURCES
   # GDAL
   gdalDummies.cpp
